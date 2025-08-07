@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <style>
+            /* Eliminar márgenes y permitir que el video cubra todo */
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            /* Video en pantalla completa */
+            video#fondo {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                z-index: -1; /* Para que quede detrás del contenido */
+            }
+
+            /* Contenido por encima del video */
+            .contenido {
+                position: relative;
+                z-index: 1;
+                color: white;
+                text-align: center;
+                top: 20%;
+                font-size: 2em;
+                font-family: sans-serif;
+            }
+            .textoContenedor{
+                font-size: 0.5em;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Video de fondo -->
+        <video id="fondo" autoplay muted loop>
+            <source src="/Images/vid.mp4" type="video/mp4">
+            Tu navegador no soporta el video HTML5.
+        </video>
+
+        <!-- Contenido de la página -->
+        <div class="contenido">
+            <h1>Bienvenido</h1>
+            <p>Sistema de Facturación SenaFactura V-1.0</p>
+            <div class="container textoContenedor">
+                <div class="row">
+                    <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+                        <div class="container">
+                            <form method="post">
+                                <div class="card">
+                                    <div class="card-header text-white"><span class="fa fa-drivers-license-o"> Nuevo Usuario</div>
+                                    <div class="card-body">
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <label class="form-label">Usuario:</label>
+                                                <input type="text" class="form-control"  required/>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label class="form-label">Contraseña:</label>
+                                                <input type="password" class="form-control" placeholder=""  required/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <div class="botones_card">
+                                            <a class='btn btn-danger btn-sm btn-grid' href="/roles"><span class="fa fa-close"></span> Cancelar</a>                
+                                            <button type="submit" id="btnSubmit" class="btn btn-success btn-sm">
+                                                <span class="fa fa-check"></span> Guardar
+                                            </button>                      
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </form>   
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>        
+    </body>
+</html>

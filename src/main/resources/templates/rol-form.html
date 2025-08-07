@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+    <head>
+        <title>Nuevo Rol</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    </head>
+    <body>
+        <div th:insert="~{/Header.html :: header}"></div>
+        <div th:insert="~{/Footer.html :: footer}"></div>
+        <div class="Contenido_Main">
+            <div class="container">
+                <form th:action="@{/roles}" th:object="${rol}" method="post">
+                    <div class="card">
+                        <div class="card-header text-white"><span class="fa fa-drivers-license-o"> Nuevo Usuario</div>
+                        <div class="card-body">
+
+                            <div class="row g-3">
+                                <input type="hidden" th:field="*{id}" />
+                                <div class="col-12">
+                                    <label class="form-label">Nombre:</label>
+                                    <input type="text" th:field="*{Nombre}" class="form-control"  required/>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Descripcion:</label>
+                                    <input type="text" th:field="*{Descripcion}" class="form-control" placeholder=""  required/>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Activo:</label>
+                                    <select th:field="*{Activo}" name="Activo" id="Activo" class="form-control" required>
+                                        <option value="true">Si</option>
+                                        <option value="false">No</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="botones_card">
+                                <a class='btn btn-danger btn-sm btn-grid' href="/roles"><span class="fa fa-close"></span> Cancelar</a>                
+                                <button type="submit" id="btnSubmit" class="btn btn-success btn-sm">
+                                    <span class="fa fa-check"></span> Guardar
+                                </button>                      
+                            </div>
+                        </div>
+                    </div>                        
+                </form>   
+            </div>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>    
+    </body>
+</html>

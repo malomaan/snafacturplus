@@ -1,0 +1,91 @@
+<div th:fragment="header">    
+    <div class="Cabecera_Dashboard">
+        <div class="Content-Left">
+            <img class="Logo_Dashboard" src="/Images/LogoWhite01.svg" alt=""/>    
+            <img class="Logo_SenaFactura_Dashboard" src="/Images/SenaFactura.svg" alt=""/>    
+        </div>                        
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index"><i class="fa fa-home Icon_Side" ></i> Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-cog Icon_Side" ></i> Configuraciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/empresas">Empresa</a></li>
+                            <li><a class="dropdown-item" href="/empleados">Empleados</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/proveedores">Proveedores</a></li>
+                            <li><a class="dropdown-item" href="/productos">Productos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/clientes">Clientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-cubes Icon_Side" ></i>Inventario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-cart-plus Icon_Side" ></i> Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-print Icon_Side" ></i> Reportes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-key Icon_Side" ></i> Seguridad
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/usuarios">Usuarios</a></li>
+                            <li><a class="dropdown-item" href="/roles">Roles</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Permisos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-wheelchair Icon_Side" ></i> Ayuda</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-bell Icon_Menu" ></i> Información
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-lock Icon_Menu" ></i> Administrador
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </span>                      
+            </div>
+        </div>
+    </nav>
+    <div class="Contenido_Dashboard">
+        <div class="Sidebar">
+            <img class="Logo_Sidebar" src="/Images/Logo01.svg" alt=""/>    
+            <div class="sidebar">
+                <a href="#"><i class="fa fa-home Icon_Side" ></i> Inicio</a>
+                <a href="#"><i class="fa fa-barcode Icon_Side" ></i> Facturar</a>
+                <a href="/productos"><i class="fa fa-suitcase Icon_Side" ></i> Productos</a>
+                <a href="/clientes"><i class="fa fa-group Icon_Side" ></i> Clientes</a>
+                <a href="/proveedores"><i class="fa fa-suitcase Icon_Side" ></i> Proveedores</a>
+                <a href="/login" class="logout"><i class="fa fa-power-off Icon_Side" ></i> Salir</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,404 @@
+body{
+    background-color: #919CB1  !important;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+.Cabecera_Dashboard{
+  background-color: #14315A;
+  width: 100%;
+  height: 90px;
+  margin-top: -50px;
+}
+
+
+.Cabecera{
+    background-color: #14315A;
+  --size: 100%;
+  --half-size: calc(var(--size) / 2);
+  --gradient: linear-gradient(#14315A, #14315A);
+  width: var(--size);
+  height: 100px;
+  background: var(--gradient);
+  border-radius: 50% / 65% 65% var(--half-size) var(--half-size);
+  margin-top: -50px;
+}
+
+.Pie{
+  background-color: #14315A;
+ /* height: 80px;    
+  margin-top: 9.40%;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 20px 0 0 0;*/
+ 
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  color: white;
+  border-radius: 20px 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.Pie_contenido_left{
+    /*margin-left: 10px;*/
+    color:#FFFF;    
+    font-family: Calibri;
+    font-size: 13px;
+    width:90%;
+    display: flex;
+    /*background-color: green;*/
+    height: 80px;    
+    margin-left:10px;
+
+}
+
+.Pie_contenido_rigth{
+    margin-right: 10px;
+    color:#FFFF;    
+    font-family: Calibri;
+    font-size: 13px;
+    /*background-color: red;*/
+    height: 80px;  
+    text-align: right;
+    width:90%;
+}
+
+.Content-Center{
+    text-align: center;
+    padding: 0;
+}
+
+.Content-Left{
+    text-align: left;
+    margin-top: 10px;
+    padding: 0;
+}
+.Loading_Image{
+    width: 120px;
+    height: 120px;
+    padding: 0;
+}
+
+.Logo_Londing{
+    width: 511px;
+    height: 267px;
+    padding: 0;
+}
+
+.Logo_Dashboard{
+    width: 150px;
+    height: 70px;
+    padding: 0;
+    margin-top: 30px;
+}
+.Logo_Login{
+    width: 311px;
+    height: 167px;
+    padding: 0;
+}
+.Logo_Sidebar{
+    width: 211px;
+    height: 110px;
+    margin-top: 0px;
+    text-align: center !important;
+
+}
+
+
+
+.Logo_SenaFactura_Dashboard{
+    margin-top: 30px;
+    width: 241px;
+    height: 64px;
+    padding: 0;    
+}
+.Logo_SenaFactura{
+    width: 241px;
+    height: 64px;
+    padding: 0;
+}
+
+.btn_continuar_login {
+  padding: 10px 20px;
+  background-color: #0D6EFD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.btn_continuar_login:hover {
+  background-color: #45a049;
+}
+.btn_continuar_login:active {
+  background-color: #3e8e41;
+}
+
+.btn_continuar {
+  padding: 10px 20px;
+  background-color: #0D6EFD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn_continuar:hover {
+  background-color: #45a049;
+}
+.btn_continuar:active {
+  background-color: #3e8e41;
+}
+
+.Tabla_Centrada{
+    margin: auto;
+    text-align:right;
+    margin: 0 auto;
+    width: 400px;
+}
+
+
+input {
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+label{
+    color:#ffffff;
+}
+
+input[type='text'] {
+      width: 100%;
+      border-radius: 0px 5px 5px 0px;
+      font-size: 11px;
+}
+
+input[type='email'] {
+      width: 100%;
+      border-radius: 0px 5px 5px 0px;
+      font-size: 11px;
+}
+
+input[type='password'] {
+      width: 100%;
+      font-size: 11px;
+}
+
+.Link{
+    color:#ffffff;
+}
+
+.input-icono{
+    background: url(KeyBlack.png) no-repeat scroll 7px 7px;
+    margin-bottom: 0;
+    height: 15px;
+    width: 16px;
+  
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.icon {
+  padding: 8px;
+  background: #ffffff;
+  color: #ccc;
+  min-width: 20px;
+  text-align: center;
+  border-radius: 5px 0px 0px 5px;
+}
+
+
+.bg-body-tertiary{
+    background-color: #919CB1 !important;
+}
+
+.Icon_Menu{
+    font-size:22px;
+    color: #ffffff;    
+}
+
+.Contenido_Dashboard{
+    background-color: #ffffff !important;
+    height: 67.50%;
+    position: relative;
+ 
+}
+
+.Sidebar{
+    width: 20%;
+    background-color: #919CB1;
+    position: absolute;
+    height: 100%;
+    text-align: center;
+}
+
+.Contenido_Mail{
+    width: 70%;
+    background-color: white;
+    margin-left: 22%;
+    height: 100%;
+    padding: 10px;
+}
+
+.Contenido_Main{
+    width: 76%;
+    background-color: white;
+    margin-left: 22%;
+    height: 100%;
+    padding: 10px;
+    
+}
+.contenidoformulario {
+  height: 23em;
+  line-height: 1em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.sidebar {
+    height: 52.80%;
+    width: 20%;
+    position: fixed;
+    left: 0;
+    background-color: #919CB1;
+    padding-top: 0px;
+    text-align: left;
+}
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: 0.3s;
+      background-color: #498FBD;
+      margin-bottom: 1px;
+      width: 90%;
+      margin-left: 10px;
+      border-radius: 5px 5px 5px 5px;
+
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .sidebar a.logout {
+      position: absolute;
+      bottom: 50px;
+      width: 90%;
+      background-color: #c0392b;
+      border-radius: 5px 5px 5px 5px;
+    }
+
+    .sidebar a.logout:hover {
+      background-color: #e74c3c;
+      border-radius: 5px 5px 5px 5px;
+    }
+    
+    .Icon_Side{
+        font-size:28px !important;
+        color: white;    
+    }
+    
+       .Icon_CardCont{
+        font-size:24px !important;
+        color: white;    
+    }
+    
+    .Titulo_Main{
+        text-align: center;
+    }
+    .Box{
+        padding: 10px;
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        color:#ffffff;
+    }
+    .Box_Main_Blue{
+        background-color: #077CD7;
+    }
+    .Box_Main_Orange{
+        background-color: orangered;
+    }
+    .Box_Main_Purple{
+        background-color: #592383;
+    }
+    .Box_Main_Green{
+        background-color: #269615;
+    }
+    .Imagen_Main{
+        width: 700px;
+        height: 200px;
+    }
+    
+    .nav-item:hover{
+        background-color: #498FBD;
+    }
+    
+    .botones_card{
+        text-align: right;
+    }
+    
+
+    .card{
+        padding: 10px;
+    }
+    .card-header{
+        color:white;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .card-body{
+        background-color: #F9F8F8;
+        color:black;
+    }
+     .card-body label{
+        background-color: #F9F8F8;
+        color:black;
+    }
+    
+ .row {
+    padding: 5px;
+ }
+ 
+ table{
+     font-size: 11px;
+ }
+ 
+ .form-label{
+     font-size: 10px !important;
+ }
+ 
+ .card-header{
+     background-color: #498FBD !important;
+ }
