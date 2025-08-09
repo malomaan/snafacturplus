@@ -159,9 +159,10 @@ body{
 
 .Tabla_Centrada{
     margin: auto;
-    text-align:right;
+    text-align:left;
     margin: 0 auto;
-    width: 400px;
+    width: 35%;
+    font-size: 1rem !important;
 }
 
 
@@ -402,3 +403,13 @@ input[type='password'] {
  .card-header{
      background-color: #498FBD !important;
  }
+ 
+ 
+ .glass-effect {
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    /* Other styling for positioning, size, etc. */
+}

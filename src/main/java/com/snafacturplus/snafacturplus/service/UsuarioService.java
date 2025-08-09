@@ -25,5 +25,9 @@ public class UsuarioService {
     public void eliminar(Long id) {
         uruarioRepository.deleteById(id);
     }
-
+    
+//    public boolean validarUsuario(String email, String password) {
+//        return uruarioRepository.findByEmailAndPassword(email, password).isPresent();
+//    }
+    
 }
