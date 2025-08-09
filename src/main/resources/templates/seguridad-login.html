@@ -1,7 +1,4 @@
-<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="es">
-
-    <html>
         <head>
             <title>Login</title>
             <meta charset="UTF-8">
@@ -61,13 +58,13 @@
                     <div class="Content-Center">
                         <img class="Logo_SenaFactura" src="/Images/SenaFactura.svg" alt=""/>    
                     </div>
-                    <form>
+                    <form th:action="@{/login}" th:object="${login}" method="post">
                         <div class="form-group row">
                             <label for="inputEmail3" class="col-sm-2 col-form-label">Usuario:</label>
                             <div class="col-sm-10">
                                 <div class="input-container">
                                     <i class="fa fa-envelope icon"></i>
-                                    <input class="input-field" type="email" placeholder="Email" id="email" name="email"  required>
+                                    <input  th:field="*{Email}" class="input-field" type="email" placeholder="correo@dominio.com" id="email" name="email"  required>
                                 </div>                                               
                             </div>
                         </div>
@@ -76,7 +73,7 @@
                             <div class="col-sm-10">
                                 <div class="input-container">
                                     <i class="fa fa-key icon"></i>
-                                    <input class="input-field" type="password"  id="password" name="password"  required>
+                                    <input th:field="*{Password}"  class="input-field" type="password"  id="Password" name="Password"  required>
                                 </div>                                               
                             </div>
                         </div>
@@ -99,8 +96,10 @@
                                 <br>
                                 <br>
                                 <a class="Link" href="https://www.w3schools.com">Restablecer Contraseña</a>
-                                <br>
-                                <br>
+                                
+                                <div th:if="${mensaje}" th:class="'alert alert-'">
+                                    <span th:text="${mensaje}"></span>
+                                </div>
                             </div>
                         </div>
                     </form>

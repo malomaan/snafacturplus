@@ -26,7 +26,7 @@ public class RolController {
     
     @GetMapping("/")
     public String mostrarPaginaInicio() {
-        return "index";
+        return "/Login";
     }
 
     @GetMapping("/nuevo")

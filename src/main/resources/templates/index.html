@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="es">
     <head>
-        <title>TODO supply a title</title>
+        <title>TODO supply a title Index</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
@@ -13,10 +13,10 @@
     <body>
         <div th:insert="~{/Header.html :: header}"></div>
         <div th:insert="~{/Footer.html :: footer}"></div>
-
         <div class="Contenido_Main">
             <div class="Titulo_Main">
-                <h1>Sistema de Facturación Electrónica </h1>
+                <h1>Sistema de Facturación Electrónica</h1>
+                <h4>Bienvenido <span th:text="${Usuario}"></span>..</h4>
                 <h2>SenaFactura Ver. 1 .0</h2>
                 <br>
             </div>
